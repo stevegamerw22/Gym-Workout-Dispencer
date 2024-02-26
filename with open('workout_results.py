@@ -47,8 +47,8 @@ while True:
       elif 6 - spam >= reps >= 0:
         lower_lbs = lbs - float(Weight)
         paragraph3 = doc.add_paragraph(style='Normal')
-        run3.font.name = 'Courier New'
         run3 = paragraph3.add_run(f"{lower_lbs} lbs x {repsamount} reps")
+        run3.font.name = 'Courier New'
         run3.font.size = Pt(15)
         paragraph3.alignment = 1
       spam += 2
